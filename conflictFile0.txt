@@ -1,2 +1,11 @@
-asdfs
-e
+{
+    "a": "lorem ipsum",
+    "b": 244454,
+    "c": [
+        12,
+        "13",
+        14,
+        true
+    ],
+    d: "oatmeal"
+}
