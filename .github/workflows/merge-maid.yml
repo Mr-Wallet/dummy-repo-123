@@ -1,0 +1,16 @@
+name: Run Merge Maid
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-merge-maid-workflow:
+    name: Run Merge Maid
+    uses: gitkraken/merge-maid-action/.github/workflows/merge-maid-composite.yml@main
+    permissions:
+      contents: read
+      pull-requests: read
+    with:
+      action_type: 'chat'
+      base_ref: ${{ github.ref }}
